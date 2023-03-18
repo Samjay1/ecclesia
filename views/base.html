@@ -1,0 +1,148 @@
+
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Vover</title>
+        
+         <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!--    Font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+        <link rel="shortcut icon"  href='../public/images/listed.jpg'/>
+        <link type="text/css" rel="stylesheet" href="../public/static/css/style.css">
+
+        <!-- Carousel style -->
+        <link rel="stylesheet" href="../public/fonts/icomoon/style.css">
+
+        <link rel="stylesheet" href="../public/css/owl.carousel.min.css">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+        
+        <!-- Style -->
+        <link rel="stylesheet" href="../public/css/style.css">
+
+        <!-- Carousel style -->
+
+
+        <!-- <link rel="stylesheet" href="css/owl.carousel.min.css"> -->
+        <link rel="stylesheet" href="../public/css/owl.theme.default.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+		<link rel="stylesheet" href="../public/css/carouselmain.css">
+
+
+    </head>
+    <body class=" bg-all" >
+        <!--  Navbar    -->
+        <header class="border-bottom bg-white shadow">
+            <nav class="container navbar navbar-light navbar-expand-lg align-items-end">
+                <a class="navbar-brand mt-2" href="/index"> <span class="align-bottom h4 logo-text"> <img src="../public/images/logo/Vovervote.svg" alt=""> </span> <span class="align-bottom  h4"></span></a>
+                <button class="navbar-toggler border border-dark" data-target="#data" data-toggle="collapse" type="button"> <span class="navbar-toggler-icon"></span> </button>
+                <div class="collapse navbar-collapse" id="data">
+                        <ul class="navbar-nav ml-auto h7 mt-2">
+                            <li class="nav-item m-1"> 
+                                <a class="nav-link link pl-3 text-center" href="/business/register">Home</a> 
+                            </li>
+                            <li class="nav-item m-1"> 
+                                <a class="nav-link  link text-center"  href="/login">Get Started</a> 
+                        </li>
+                            <li class="nav-item m-1"> 
+                                <a class="nav-link link text-center" href="/about">About us</a> 
+                            </li>
+                            <li class="nav-item m-1"> 
+                                    <a class="nav-link  bg-secondary radius-5 p-1  text-center"  href="/login"><img class="img-fluid avatar" src="../public/images/logo/MaleAvatar.svg" alt=""> </a> 
+                            </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!--  End Navbar    --> 
+
+        <!--   MAIN CONTENT -->
+        <div class="container mb-5">
+           
+
+              <!-- SEARCH AREA -->
+            <div class="pt-3 mb-3 pb-1">
+                <form method="POST" action="/" class="d-sm-inline-block form-inline  my-md-0 w-50 mw-100 sm-ml-3 navbar-search" style="min-width:330px">
+                    <div class="input-group bg-white radius-3  border-gray pl-3 pr-3">
+                    
+                        <input name="value" id="search-box" onclick="showList()" type="text" class="form-control bg-white border-0  rounded-0 small mt-1" placeholder="Search election..." aria-label="Search" aria-describedby="basic-addon2">
+                        <div class="input-group-append pl-2 ">
+                            <button class="btn btn-gray bg-gray color-gray rounded pl-1 pr-1 mt-1 mb-1" type="submit">
+                                <i class="fa fa-search fa-sm ml-2 mr-2"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                </form>
+            
+            </div>
+            <!-- SEARCH AREA -->
+
+            <div class="pl-2">
+                <p> 
+                    <span><a class="p-2 pl-4 pr-4 radius-5 btn-color-primary" href="#">All</a></span>
+                    <span><a class="p-2 pl-4 pr-4 radius-5 btn-color-secondary" href="#">Public</a></span>
+                    <span><a class="p-2 pl-4 pr-4 radius-5 btn-color-secondary " href="#">Private</a></span>
+                </p>
+            </div>
+
+         
+
+        </div>
+         <!-- END MAIN CONTENT -->
+
+         <!-- FOOTER -->
+        <footer class="container-fluid bg-white pt-5 pb-5 mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="../public/images/logo/Vovervote.svg" alt="">
+                        <p class="ml-1 mt-3">Vovervote is an e-voting platform that helps <br> people and organizations create and join <br> elections online.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <ul type=none class="ml-0  pl-0">
+                            <li ><a class="link font-weight-normal" href="#">About Us</a></li>
+                            <li><a class="link font-weight-normal" href="#">Help Center</a></li>
+                            <li><a class="link font-weight-normal" href="#">FAQ</a></li>
+                            <li><a class="link font-weight-normal" href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul type=none class="ml-0  pl-0">
+                            <li><a class="link font-weight-normal"  href="#">+44 345 678 903</a></li>
+                            <li><a class="link font-weight-normal" href="#">Vovervote@gmail.com</a></li>
+                            <li>
+                                <a class="link font-weight-normal" href="#"><i class="fa fa-facebook m-1" aria-hidden="true"></i></a>
+                                <a class="link font-weight-normal" href="#"><i class="fa fa-instagram m-1" aria-hidden="true"></i></a>
+                                <a class="link font-weight-normal" href="#"> <i class="fa fa-twitter m-1" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+         <!-- END FOOTER -->
+
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <!-- Carousel script -->
+  <script src="../public/js/jquery-3.3.1.min.js"></script>
+  <script src="../public/js/popper.min.js"></script>
+  <script src="../public/js/bootstrap.min.js"></script>
+  <script src="../public/js/owl.carousel.min.js"></script>
+  <script src="../public/js/main.js"></script>
+  <script src="../public/js/carouselmain.js"></script>
+</body>
+</html>

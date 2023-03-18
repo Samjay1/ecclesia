@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/public/images/logo.jpg" sizes="16x16">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <title>ECCLESIA</title>
+</head>
+<body style="font-family: 'Roboto', sans-serif;" class="bg-sky-50">
+    <div class="relative min-h-screen md:flex">
+        <!-- mobile menu bar -->
+        <div class="md:hidden flex justify-between  border-l-8 border-blue-900 rounded bg-white  text-white">
+              <!-- logo -->
+              <a href="dashboard.html" class="space-x-2 items-center flex mt-3 mb-3 ml-4">
+                  <!-- <img class="h-10 w-10 " src="/images/logo.png"> -->
+               
+              <span class="font-extrabold text-2xl text-blue-900">ECCLESIA</span>
+            </a>
+
+            <div class="flex">
+                <!-- menu button -->
+                <button class="focus:outline-none focus:bg-blue-200 mobile-menu-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 self-center text-blue-900 m-2 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                      </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- sidebar -->
+        <div class=" shadow-lg sidebar bg-blue-900 text-blue-100 w-64 absolute md:relative inset-y-0 left-0 transform -translate-x-full md:translate-x-0 transition duration-300 ease-in-out">
+            <!-- logo -->
+            <div class="space-x-2 items-center bg-white border-2 border-blue-900 p-3">
+                <!-- <img class="h-24 w-36 text-white m-auto" src="/public/images/logo.jpg"> -->
+             
+              <p class="font-extrabold text-2xl text-center pt-2 text-blue-900 pl-2">ECCLESIA</p>
+          </div>
+
+            <!-- nav -->
+            <nav class="mt-5 text-gray-100">
+                
+                <a href="dashboard.html" class="py-2 mx-3 px-2 flex font-bold hover:text-gray-900 hover:bg-blue-100 transition duration-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                      </svg>
+                    <span class="px-4">Dashboard</span></a>
+                <hr class="mx-3">
+                <a href="manage_events.html" class="flex mt-2  py-2 mx-3 px-2  hover:text-gray-900 hover:bg-blue-100 transition duration-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                        <path fill-rule="evenodd" d="M7.502 6h7.128A3.375 3.375 0 0118 9.375v9.375a3 3 0 003-3V6.108c0-1.505-1.125-2.811-2.664-2.94a48.972 48.972 0 00-.673-.05A3 3 0 0015 1.5h-1.5a3 3 0 00-2.663 1.618c-.225.015-.45.032-.673.05C8.662 3.295 7.554 4.542 7.502 6zM13.5 3A1.5 1.5 0 0012 4.5h4.5A1.5 1.5 0 0015 3h-1.5z" clip-rule="evenodd" />
+                        <path fill-rule="evenodd" d="M3 9.375C3 8.339 3.84 7.5 4.875 7.5h9.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 013 20.625V9.375zM6 12a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H6.75a.75.75 0 01-.75-.75V12zm2.25 0a.75.75 0 01.75-.75h3.75a.75.75 0 010 1.5H9a.75.75 0 01-.75-.75zM6 15a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H6.75a.75.75 0 01-.75-.75V15zm2.25 0a.75.75 0 01.75-.75h3.75a.75.75 0 010 1.5H9a.75.75 0 01-.75-.75zM6 18a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H6.75a.75.75 0 01-.75-.75V18zm2.25 0a.75.75 0 01.75-.75h3.75a.75.75 0 010 1.5H9a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+                      </svg>
+                <span class="px-4">Manage Events</span></a>
+                
+                <hr class="mx-3">
+                <a href="event_reports.html" class="flex mt-2  py-2 mx-3 px-2 hover:text-gray-900 hover:bg-blue-100 transition duration-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z" />
+                      </svg>
+                    <span class="px-4">Event reports</span></a>
+              <hr class="mx-3">
+
+                <a href="attendees.html" class="flex mt-2  py-2 mx-3 px-2 hover:text-gray-900 hover:bg-blue-100 transition duration-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                        <path d="M4.5 6.375a4.125 4.125 0 118.25 0 4.125 4.125 0 01-8.25 0zM14.25 8.625a3.375 3.375 0 116.75 0 3.375 3.375 0 01-6.75 0zM1.5 19.125a7.125 7.125 0 0114.25 0v.003l-.001.119a.75.75 0 01-.363.63 13.067 13.067 0 01-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 01-.364-.63l-.001-.122zM17.25 19.128l-.001.144a2.25 2.25 0 01-.233.96 10.088 10.088 0 005.06-1.01.75.75 0 00.42-.643 4.875 4.875 0 00-6.957-4.611 8.586 8.586 0 011.71 5.157v.003z" />
+                      </svg>
+                    <span class="px-4">Manage Attendees </span></a>
+                <hr class="mx-3">
+                <a href="payments.html" class="flex mt-2 py-2 mx-3 px-2 hover:text-gray-900 hover:bg-blue-100 transition duration-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                        <path d="M12 7.5a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z" />
+                        <path fill-rule="evenodd" d="M1.5 4.875C1.5 3.839 2.34 3 3.375 3h17.25c1.035 0 1.875.84 1.875 1.875v9.75c0 1.036-.84 1.875-1.875 1.875H3.375A1.875 1.875 0 011.5 14.625v-9.75zM8.25 9.75a3.75 3.75 0 117.5 0 3.75 3.75 0 01-7.5 0zM18.75 9a.75.75 0 00-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 00.75-.75V9.75a.75.75 0 00-.75-.75h-.008zM4.5 9.75A.75.75 0 015.25 9h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H5.25a.75.75 0 01-.75-.75V9.75z" clip-rule="evenodd" />
+                        <path d="M2.25 18a.75.75 0 000 1.5c5.4 0 10.63.722 15.6 2.075 1.19.324 2.4-.558 2.4-1.82V18.75a.75.75 0 00-.75-.75H2.25z" />
+                      </svg>
+                      <span class="px-4">Manage Payments</span></a>
+                <hr class="mx-3">
+
+                <a href="members.html" class="flex mt-2 py-2 mx-3 px-2 bg-blue-100 text-gray-900 hover:text-gray-900 hover:bg-blue-100 transition duration-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+                    </svg>
+                    <span class="px-4">Manage Membership</span></a>
+                <hr class="mx-3"> 
+                <a href="password_reset.html" class="flex mt-2 py-2 mx-3 px-2 hover:text-gray-900 hover:bg-blue-100 transition duration-400 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                        <path fill-rule="evenodd" d="M12 1.5a5.25 5.25 0 00-5.25 5.25v3a3 3 0 00-3 3v6.75a3 3 0 003 3h10.5a3 3 0 003-3v-6.75a3 3 0 00-3-3v-3c0-2.9-2.35-5.25-5.25-5.25zm3.75 8.25v-3a3.75 3.75 0 10-7.5 0v3h7.5z" clip-rule="evenodd" />
+                      </svg>
+                      <span class="px-4">Password reset</span>
+                    </a>
+                <hr class="mx-3">
+                <a href="/login.html" class="flex  mt-2  py-2 mx-3 px-2 hover:text-gray-900 hover:bg-blue-100 transition duration-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+                      </svg> 
+                    <span class="px-4">Logout</span>
+                </a>
+                <hr class="mx-3">
+            </nav>
+        </div>
+        <!-- end sidebar -->
+
+        <!-- Main content here -->
+        <div class="flex-1 lg:p-10 p-1 py-4 text-2xl font-bold">
+
+            <!-- Search bar and notification box -->
+            <div class="rounded-xl py-4 px-5 bg-white lg:flex justify-between shadow-lg border">
+                <div class="my-3">
+                    <h1 class="text-blue-900 ml-3 lg:text-2xl uppercase text-lg">Update Member</h1>
+                </div>
+            </div>
+            <!--end Search bar and notification box -->
+        
+         <!-- Content here -->
+         <div class="p-4 pt-0 bg-white mt-5 rounded-lg space-y-3 shadow-lg border">
+            <p class="mt-5  lg:text-2xl uppercase text-lg">Update Member Details</p>
+            <form action="" class="my-5">
+                <div class="my-5 py-2">
+                    <div class="grid lg:grid-cols-2 gap-4 text-sm w-full ">
+                        <div>
+                            <p>Member Name</p>
+                            <input class="w-full border border-slate-300 flex-1 rounded-md py-2 pl-3 mt-2  shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" type="text" name="venue" placeholder="Member Name" required>
+                        </div>
+                        <div>
+                            <p>Member Contact details</p>
+                            <input class="w-full border border-slate-300 flex-1 rounded-md py-2 pl-3 mt-2  shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" type="text" name="venue" placeholder="Member Contact details" required>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="my-5 border-t py-2">
+                    <!-- <p>Event Timeline</p> -->
+                    <div class="grid lg:grid-cols-3 gap-4 text-sm w-full ">
+                        <div class="text-sm">
+                            <p>Membership Type</p>
+                            <select name="category" class="w-full border border-slate-300 rounded-md py-3 pl-3 mt-2  shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" required>
+                                <option value='General' disabled selected>Select Membership type</option>
+                                <option value="Awards">Visiting</option>
+                                <option value="Music">Permanent</option>
+                            </select>
+                        </div>
+                        <div>
+                            <p>Date Joined</p>
+                            <input class=" w-full border border-slate-300 rounded-md py-2 pl-3 mt-2  shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" type="date" name="event_date" required>
+                        </div>
+                        <div>
+                            <p>Departure Date</p>
+                            <input class=" w-full border border-slate-300 rounded-md py-2 pl-3 mt-2  shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" type="date" name="event_date" required>
+                        </div>
+                    </div>
+                </div>
+
+               <div class="text-center">
+                    <button type="submit" class="bg-blue-800 p-1 px-2 text-white text-base rounded border border-white hover:bg-white hover:border-blue-800 hover:text-blue-800 transition duration-200">Update Member</button>
+               </div>
+            </form>
+           
+        </div>
+        <!-- end Content here -->
+        </div>
+    <!-- end Main content here -->
+
+
+        
+    </div>
+    <script>
+            const menu_button = document.querySelector('.mobile-menu-button');
+            const sidebar = document.querySelector('.sidebar');
+
+            menu_button.addEventListener('click', ()=>{
+                sidebar.classList.toggle('-translate-x-full');
+            });
+    </script>
+    <script src="/js/script.js"></script>
+</body>
+</html>

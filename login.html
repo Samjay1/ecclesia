@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/public/images/logo.jpg" sizes="16x16">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <title>ECCLESIA</title>
+</head>
+<body style="font-family: 'Roboto', sans-serif;" class="bg-sky-50">
+   <div class="lg:w-3/5 m-auto">
+    <div class="grid lg:grid-cols-2 my-10 shadow-2xl rounded-2xl bg-white  border-black lg:mx-1 mx-5">
+        <div class="col-span-1 lg:block hidden ">
+            <img class="object-cover lg:w-full h-full lg:rounded-l-2xl" src="https://cdn.pixabay.com/photo/2018/02/06/17/15/jesus-3135229__340.jpg" alt="">
+        </div>
+        <div class="col-span-1" id="form">
+            <div class="mx-auto p-5 lg:w-11/12">
+                <p class="text-center text-3xl text-blue-800">Login</p>
+                <p class="text-xl text-center">Engage with <span class="text-blue-800 font-bold">ECCLESIA</span></p>
+                <form action="dashboard.html" method="post" class="space-y-1 font-bold pt-10">
+
+                    <div class="pt-4">
+                        <label  for="login_name">Email</label>
+                        <input  type="email" name="email" id="email" placeholder="Enter email" class="focus:outline-none focus:bg-sky-100 bg-gray-100 w-full text-sm font-thin md:px-8 p-4" required>
+                    </div>
+        
+                    <div class="pt-4">
+                        <label for="password ">Password</label>
+                        <input  type="password" name="password" id="password" placeholder="Enter valid password" class="focus:outline-none focus:bg-sky-100 bg-gray-100 w-full text-sm font-thin md:px-8 p-4" required>
+                    </div>
+                    <p class="text-center p-2"><a href="/views/dashboard.html" class="font-bold p-3 rounded bg-blue-800 hover:bg-black text-white duration-200">Log in</a></p>
+                   <!-- <p class="text-center p-2"><button type="submit" class="font-bold p-3 rounded bg-blue-800 hover:bg-black text-white duration-200">Log in</button></p> -->
+                </form>
+               
+            </div>
+         </div>
+    </div>
+   </div>
+</body>
+</html>
